@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <section id="outside">
+    <div id="inside">
+      <div class="choice hidden" id="pick-1-or-2">
+        <p>How do you want to play?</p>
+        <button>One Player</button>
+        <button>Two Player</button>
+      </div>
+      <div class="choice hidden" id="pick-xo">
+        <p>Player 1 : Would you like X or O?</p>
+        <button>X</button>
+        <button>O</button>
+        <button class="back"><- Back</button>
+      </div>
+      <div class="choice hidden" id="p1-pick-xo">
+        <p>Would you like to be X or O?</p>
+        <button>X</button>
+        <button>O</button>
+        <button class="back"><- Back</button>
+      </div>
+      <div id="board" class="hidden">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <sides></sides>
+  </section>
+<footer>
+  <p><a href="https://codepen.io/FreeCodeCamp/full/KzXQgy/" target="_blank">Original</a> created by <a href="https://codepen.io/FreeCodeCamp/" target="_blank">FreeCodeCamp</a>.</p>
+  <p>Recreated for learning by <a href="https://www.freecodecamp.com/underoneflag" target="_blank">underOneFlag</a></p>
+</footer>
+  <script src="main.js"></script>
+</body>
+</html>
