@@ -3,30 +3,47 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- <meta name="viewport" content="width=400, initial-scale=1.0"/> -->
   <title></title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <section id="outside">
+  <header></header>
+  <section id="outside" class="picking">
+    <div id="turn-info">
+      <p></p>
+      <p></p>
+    </div>
+    <div id="info">
+      <div class="p1-info">
+        <p>0</p>
+        <p>player 1</p>
+      </div>
+      <div class="p2-info">
+        <p>1</p>
+        <p></p>
+      </div>
+      <button id="reset-game">Reset All</button>
+    </div>
     <div id="inside">
-      <div class="choice hidden" id="pick-1-or-2">
+      <div class="choice" id="pick-1-or-2">
         <p>How do you want to play?</p>
         <button>One Player</button>
         <button>Two Player</button>
       </div>
-      <div class="choice hidden" id="pick-xo">
+      <div class="choice" id="p1-pick-xo">
         <p>Player 1 : Would you like X or O?</p>
         <button>X</button>
         <button>O</button>
         <button class="back"><- Back</button>
       </div>
-      <div class="choice hidden" id="p1-pick-xo">
+      <div class="choice" id="pick-xo">
         <p>Would you like to be X or O?</p>
         <button>X</button>
         <button>O</button>
         <button class="back"><- Back</button>
       </div>
-      <div id="board" class="hidden">
+      <div id="board">
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
@@ -36,6 +53,9 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
+      </div>
+      <div id="result">
+        <p></p>
       </div>
     </div>
     <sides></sides>
